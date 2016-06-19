@@ -22,7 +22,7 @@ for i in 1...10 {
 }
 /*:
 
-## Can you implment this without a for-loop?
+## Can you implement this without a for-loop?
 
 Yes! This is a perfect test for recursion! Let's see how it would look if we could not use a for-loop...
 
