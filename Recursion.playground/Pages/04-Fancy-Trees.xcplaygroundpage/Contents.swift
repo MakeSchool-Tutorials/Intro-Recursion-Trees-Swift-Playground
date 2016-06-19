@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # Fancy trees
  
  Now that you've conquered a basic tree, can you make it fancier?
@@ -64,11 +63,11 @@ drawTree(5)
  - Change color between branches or for leaves.
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 //:
 //: This is setup code to make the live visualization work!
 Pen.delay = 0.2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

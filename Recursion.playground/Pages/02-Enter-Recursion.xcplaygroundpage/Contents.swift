@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # Drawing trees with recursion
  
  - callout(Recap): Recusion is the act of calling a function from inside itself.
@@ -77,7 +76,7 @@ drawFourLevelTree()
  Now the question is... are you seeing the recursive method here? Do you think you can create a `drawTree(levels: Int)` function?
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 
 
 
@@ -88,4 +87,4 @@ Pen.delay = 0.2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

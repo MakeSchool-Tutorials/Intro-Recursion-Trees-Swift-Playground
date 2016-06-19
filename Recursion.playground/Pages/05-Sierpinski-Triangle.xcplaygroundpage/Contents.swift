@@ -1,6 +1,6 @@
 import Foundation
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # Triforce time!
  
  Let's try drawing something even more [fractal](https://en.wikipedia.org/wiki/Fractal)-y than a tree! If you've played any game from the _Zelda_ series, you'll recongize this as a _triforce_, but it's really based off of the [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle)!
@@ -61,20 +61,7 @@ func sierpinksi(iterations: Int, base center: (x: Double, y: Double), height: Do
 
 sierpinksi(3, base: (250, 50), height: 400)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//: [Previous](@previous)
 
 //: This is setup code to make the live visualization work!
 Pen.delay = 0

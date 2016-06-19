@@ -1,6 +1,5 @@
-//: [Previous](@previous)
 /*:
- 
+ ![Make School Banner](./swift_banner.png)
  # Let's do it recursively
  
  - callout(Recap): Recusion is the act of calling a function from inside itself.
@@ -56,11 +55,11 @@ drawTree(1)
  Searching for a file on a computer requires code to "traverse" the tree. Since websites also rely on a tree-like structure, search engines use "web crawlers" to view all the pages on a website. These "web crawlers" are responsible for indexing or creating listings for each page to be searched later!
  
  */
-//: [Next](@next)
+//: [Previous](@previous) | [Next](@next)
 //:
 //: This is setup code to make the live visualization work!
 Pen.delay = 0.2
 import XCPlayground
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+XCPlaygroundPage.current

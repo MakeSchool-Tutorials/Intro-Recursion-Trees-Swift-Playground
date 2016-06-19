@@ -1,5 +1,5 @@
 /*:
-
+![Make School Banner](./swift_banner.png)
 # Recursion
 
 Recursion is an interesting topic in computer science. It's simple to understand but some people struggle with it's application. Simply put, recusion is the act of calling a function from inside itself.
