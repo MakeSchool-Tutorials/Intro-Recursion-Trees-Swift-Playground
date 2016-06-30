@@ -50,7 +50,7 @@ func drawTriangle(base center: (x: Double, y: Double), height: Double) {
  
  Remember to stop the recursion with your base case!
  
- - callout(Hint): The bottom two internal triangles have a base center that is horizontally offset by 1/4 of a side from the original triangle's base canter. The top triangle has a base center 1/2 a height above the original triangle's base center.
+ - callout(Hint): The bottom two internal triangles have a base center that is horizontally offset by 1/4 of a _side_ from the original triangle's base canter. The top triangle has a base center 1/2 a _height_ above the original triangle's base center. Since `drawTriangle` takes in a height, how are you going to calculate the side length? Maybe you should peek at the `drawTriangle` method for help...
  
  */
 
