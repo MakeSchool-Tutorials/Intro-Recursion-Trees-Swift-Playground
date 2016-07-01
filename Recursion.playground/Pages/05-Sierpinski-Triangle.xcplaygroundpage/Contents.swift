@@ -54,16 +54,20 @@ func drawTriangle(base center: (x: Double, y: Double), height: Double) {
  
  */
 
-func sierpinksi(iterations: Int, base center: (x: Double, y: Double), height: Double) {
+func sierpinski(iterations: Int, base center: (x: Double, y: Double), height: Double) {
     
     
 }
 
-sierpinksi(3, base: (250, 50), height: 400)
+sierpinski(3, base: (250, 50), height: 400)
 
-//: [Previous](@previous)
+/*:
+ - important: This is a recursive thinking challenge. Each iteration of `sierpinski` should only make one call to `drawTriangle`. You should make three, recursive calls to `sierpinski` if you have not reached the base case.
 
-//: This is setup code to make the live visualization work!
+[Previous](@previous)
+
+This is setup code to make the live visualization work!
+ */
 Pen.delay = 0
 import XCPlayground
 import Foundation
