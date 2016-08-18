@@ -94,7 +94,7 @@ One you have that working, comment out the the call to `drawOneLevelTree()`. Let
 */
 
 func drawTwoLevelTree() {
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -102,7 +102,7 @@ func drawTwoLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
 }
 // drawTwoLevelTree()
 
@@ -121,9 +121,9 @@ One you have that working, comment out the the call to `drawTwoLevelTree()`. Let
 */
 
 func drawThreeLevelTree() {
-    move(50)
+    move(75)
     rotate(30)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -131,9 +131,9 @@ func drawThreeLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(-60)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -141,9 +141,9 @@ func drawThreeLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
 }
 // drawThreeLevelTree()
 
@@ -162,11 +162,11 @@ And once more, transfer that logic to code...
 */
 
 func drawFourLevelTree() {
-    move(50)
+    move(75)
     rotate(30)
-    move(50)
+    move(75)
     rotate(30)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -174,9 +174,9 @@ func drawFourLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(-60)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -184,13 +184,13 @@ func drawFourLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(-60)
-    move(50)
+    move(75)
     rotate(30)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -198,9 +198,9 @@ func drawFourLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(-60)
-    move(50)
+    move(75)
     rotate(30)
     move(75)
     move(-75)
@@ -208,11 +208,11 @@ func drawFourLevelTree() {
     move(75)
     move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
     rotate(30)
-    move(-50)
+    move(-75)
 }
  drawFourLevelTree()
 
