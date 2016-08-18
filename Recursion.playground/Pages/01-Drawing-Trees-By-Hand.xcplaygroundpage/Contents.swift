@@ -74,7 +74,8 @@ Well, do you think you can write the code to draw trees like that?
 */
 
 func drawOneLevelTree() {
-
+    move(75)
+    move(-75)
 }
 // drawOneLevelTree()
 
@@ -93,7 +94,15 @@ One you have that working, comment out the the call to `drawOneLevelTree()`. Let
 */
 
 func drawTwoLevelTree() {
-
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
 }
 // drawTwoLevelTree()
 
@@ -112,7 +121,29 @@ One you have that working, comment out the the call to `drawTwoLevelTree()`. Let
 */
 
 func drawThreeLevelTree() {
-
+    move(50)
+    rotate(30)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(-60)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(30)
+    move(-50)
 }
 // drawThreeLevelTree()
 
@@ -131,9 +162,59 @@ And once more, transfer that logic to code...
 */
 
 func drawFourLevelTree() {
-
+    move(50)
+    rotate(30)
+    move(50)
+    rotate(30)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(-60)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(30)
+    move(-50)
+    rotate(-60)
+    move(50)
+    rotate(30)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(-60)
+    move(50)
+    rotate(30)
+    move(75)
+    move(-75)
+    rotate(-60)
+    move(75)
+    move(-75)
+    rotate(30)
+    move(-50)
+    rotate(30)
+    move(-50)
+    rotate(30)
+    move(-50)
 }
-// drawFourLevelTree()
+ drawFourLevelTree()
 
 /*:
 
@@ -156,7 +237,7 @@ func drawTenLevelTree() {
 
 No, no. You do not actually have to write the code for a "ten level" tree by hand! But do consider this... Given your approach to one, two, three, and four level trees -- how many lines of code do you think it'll take to draw a ten level tree? Tens? Hundreds? Thousands? It turns out that it takes just over 5,000 lines if you were to do it by hand!
 
-How about a "20-level" tree? Can you imagine writing that by hand? It would take just about a million lines of code to brute force that!
+How about a "30-level" tree? Can you imagine writing that by hand? It would take just about a million lines of code to brute force that!
 
 Don't worry though, if we use recursion, we could draw a tree of _any_ size in just ten lines of code!
 
