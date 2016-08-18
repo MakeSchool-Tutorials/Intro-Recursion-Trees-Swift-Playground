@@ -33,10 +33,28 @@
  */
 
 func drawTree(levels: Int) {
-
+    // Exit if given an invalid level
+    if levels < 1 {
+        return
+    }
+    // Base case
+    else if levels == 1 {
+        move(75)
+        move(-75)
+    }
+    // Draw tree
+    else {
+        move(75)
+        rotate(30)
+        drawTree(levels - 1)
+        rotate(-60)
+        drawTree(levels - 1)
+        rotate(30)
+        move(-75)
+    }
 }
 
-drawTree(1)
+drawTree(4)
 
 /*:
 

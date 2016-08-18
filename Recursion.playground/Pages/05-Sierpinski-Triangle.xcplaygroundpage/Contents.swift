@@ -55,11 +55,31 @@ func drawTriangle(base center: (x: Double, y: Double), height: Double) {
  */
 
 func sierpinski(iterations: Int, base center: (x: Double, y: Double), height: Double) {
+    // Exit if given an invalid number of iterations
+    if iterations < 1 {
+        return
+    }
+    // Base case
+    else if iterations == 1 {
+        drawTriangle(base: center, height: height)
+    }
+    // Draw triangles
+    else {
+        // Calculate triangle side length
+        let side = height * 2 / sqrt(3)
+        
+        // Bottom left triangle
+        sierpinski(iterations - 1, base: (x: center.x - side / 4, y: center.y), height: height / 2)
+        // Bottom right triangle
+        sierpinski(iterations - 1, base: (x: center.x + side / 4, y: center.y), height: height / 2)
+        // Top triangle
+        sierpinski(iterations - 1, base: (x: center.x, y: center.y + height / 2), height: height / 2)
+    }
     
     
 }
 
-sierpinski(3, base: (250, 50), height: 400)
+sierpinski(4, base: (250, 50), height: 400)
 
 /*:
  - important: This is a recursive thinking challenge. Each iteration of `sierpinski` should only make one call to `drawTriangle`. You should make three, recursive calls to `sierpinski` if you have not reached the base case.

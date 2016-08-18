@@ -44,9 +44,35 @@
 
  */
 
-func drawTree(levels: Int) {
+// Example project: Make the branches get smaller going out to look like a real tree.
 
+func drawTree(levels: Int) {
+    // Set appearance constraints
+    let branch = levels * 20
+    setColor(red: 0.0, green: 1.0, blue: 0.0)
+    setThickness(Double(levels) * 1.5)
+    
+    // Exit if given an invalid level
+    if levels < 1 {
+        return
+    }
+    // Base case
+    else if levels == 1 {
+        move(branch)
+        move(-branch)
+    }
+    // Draw tree
+    else {
+        move(branch)
+        rotate(30)
+        drawTree(levels - 1)
+        rotate(-60)
+        drawTree(levels - 1)
+        rotate(30)
+        move(-branch)
+    }
 }
+
 drawTree(5)
 
 /*:

@@ -38,7 +38,13 @@ func drawOneLevelTree() {
  */
 
 func drawTwoLevelTree() {
+    move(75)
+    rotate(30)
     drawOneLevelTree()
+    rotate(-60)
+    drawOneLevelTree()
+    rotate(30)
+    move(-75)
 }
 
 /*:
@@ -52,7 +58,13 @@ func drawTwoLevelTree() {
  */
 
 func drawThreeLevelTree() {
+    move(75)
+    rotate(30)
     drawTwoLevelTree()
+    rotate(-60)
+    drawTwoLevelTree()
+    rotate(30)
+    move(-75)
 }
 
 /*:
@@ -66,7 +78,13 @@ func drawThreeLevelTree() {
  */
 
 func drawFourLevelTree() {
+    move(75)
+    rotate(30)
     drawThreeLevelTree()
+    rotate(-60)
+    drawThreeLevelTree()
+    rotate(30)
+    move(-75)
 }
 
 //: Keep this function call here! It's been passing the calls up the stack for us since the start of the playground!
