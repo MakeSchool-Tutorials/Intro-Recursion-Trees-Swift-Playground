@@ -75,7 +75,7 @@ sierpinski(iterations: 3, base: (250, 50), height: 400)
 This is setup code to make the live visualization work!
  */
 Pen.delay = 0
-import XCPlayground
+import PlaygroundSupport
 import Foundation
 let results = DrawingScene.setup()
-XCPlaygroundPage.currentPage.liveView = results
+PlaygroundPage.current.liveView = results
