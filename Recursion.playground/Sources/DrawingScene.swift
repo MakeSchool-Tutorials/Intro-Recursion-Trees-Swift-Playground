@@ -1,28 +1,28 @@
 import SpriteKit
 import Foundation
 
-public class DrawingScene: SKScene {
+open class DrawingScene: SKScene {
     
-    public var pen: Pen!
+    open var pen: Pen!
     var background: SKSpriteNode!
-    public var penSprite: SKSpriteNode!
+    open var penSprite: SKSpriteNode!
     var lastShapeNode = 0
     
-    override public func didMoveToView(view: SKView) {
-        penSprite = childNodeWithName("pen") as! SKSpriteNode
-        background = childNodeWithName("background") as! SKSpriteNode
+    override open func didMove(to view: SKView) {
+        penSprite = childNode(withName: "pen") as! SKSpriteNode
+        background = childNode(withName: "background") as! SKSpriteNode
         pen = Pen.sharedInstance
     }
     
-    public override func update(currentTime: NSTimeInterval) {
+    open override func update(_ currentTime: TimeInterval) {
         penSprite.position = pen.position
         penSprite.zRotation = pen.rotation
         
         if lastShapeNode < pen.shapeNodes.count || pen.processing {
             pen.newShapeNode()
-            let image = NSImage(CGImage: background.texture!.CGImage(), size: self.size)
+            let image = NSImage(cgImage: background.texture!.cgImage(), size: self.size)
             image.lockFocus()
-            NSGraphicsContext.currentContext()?.shouldAntialias = true
+            NSGraphicsContext.current()?.shouldAntialias = true
             for i in lastShapeNode..<(pen.shapeNodes.count-1) {
                 let data = pen.shapeNodes[i]!
                 if data.numberOfPoints > 0 {
@@ -43,11 +43,11 @@ public class DrawingScene: SKScene {
         }
     }
     
-    public class func setup() -> SKView {
-        let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+    open class func setup() -> SKView {
+        let sceneView = SKView(frame: CGRect(x: 0, y: 0, width: 320, height: 568))
         sceneView.wantsLayer = true
         let scene = DrawingScene(fileNamed: "DrawingScene")!
-        scene.scaleMode = .AspectFill
+        scene.scaleMode = .aspectFill
         sceneView.presentScene(scene)
         return sceneView
     }
