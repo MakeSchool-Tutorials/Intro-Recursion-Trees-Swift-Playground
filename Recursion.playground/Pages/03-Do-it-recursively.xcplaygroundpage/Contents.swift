@@ -7,10 +7,13 @@
  ## Let's take a look at those trees again...
 
  - callout(Base case, n = 1): ![](tree1.png)
+ 
 
  - callout(n = 2): ![](tree2.png)
+ 
 
  - callout(n = 3): ![](tree3.png)
+ 
 
  - callout(n = 4): ![](tree4.png)
 
@@ -19,6 +22,7 @@
  Before you get started, we should talk about terminating recursive functions (or ending the recursive calls). Recursive functions must have a _base case_ or terminating condition! Without that, the function will continue to call itself "infinitely". This will lead to errors from your computer as it runs out of memory. These errors are called "inifite recursion errors" or sometimes even refered to as "stack overflows". Yes, [Stack Overflow](https://stackoverflow.com) was named after a common programming error... How fitting!
 
  When drawing trees, our base case is the straight line. This equates to a level one tree. If our generalized, recursive `drawTree` function takes in `levels` as an argument, how can we check if we need to terminate?
+ 
 
  - callout(Hint): Try using a conditional at the start of `drawTree`! If levels is less than `1`, then you can just `return` to stop the function from continuing.
 
@@ -28,7 +32,8 @@
 
  - callout(Challenge): Fill out the draw tree function! Make sure to terminate when you hit the base case and make sure the _fox_ ends up back at the same spot it started! Use the functions you defined on the previous page as a reference.
 
- - callout(Hint): Each `drawTree` iteration should call `drawTree` again for each new branch. Make sure to `rotate` and `move` as necessary to ensure you get back to the same spot. When it's working and terminating correctly for the call to `drawTree(1)`, test out `drawTree(2)`, `drawTree(3)`, `drawTree(4)`, and `drawTree(5)`.
+ 
+ - callout(Hint): Each `drawTree` iteration should call `drawTree` again for each new branch. Make sure to `rotate` and `move` as necessary to ensure you get back to the same spot. When it's working and terminating correctly for the call to `drawTree(levels: 1)`, test out `drawTree(levels: 2)`, `drawTree(levels: 3)`, `drawTree(levels: 4)`, and `drawTree(levels: 5)`.
 
  */
 
@@ -36,7 +41,7 @@ func drawTree(levels: Int) {
 
 }
 
-drawTree(1)
+drawTree(levels: 1)
 
 /*:
 

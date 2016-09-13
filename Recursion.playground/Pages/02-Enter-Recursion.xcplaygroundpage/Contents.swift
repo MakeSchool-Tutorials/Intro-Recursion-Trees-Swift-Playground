@@ -8,10 +8,13 @@
 
  - callout(One level tree): ![](tree1.png)
 
+ 
  - callout(Two level tree): ![](tree2.png)
 
+ 
  - callout(Three level tree): ![](tree3.png)
 
+ 
  - callout(Four level tree): ![](tree4.png)
 
  ## Thinking recursively
@@ -24,8 +27,8 @@
 
  */
 func drawOneLevelTree() {
-    move(75)
-    move(-75)
+    move(steps: 75)
+    move(steps: -75)
 }
 /*:
 

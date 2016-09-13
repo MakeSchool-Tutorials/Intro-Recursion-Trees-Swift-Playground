@@ -11,15 +11,21 @@ import Foundation
  
  - callout(Base case, n = 1): ![](sierpinski1.png)
  
+ 
  - callout(n = 2): ![](sierpinski2.png)
+ 
  
  - callout(n = 3): ![](sierpinski3.png)
  
+ 
  - callout(n = 4): ![](sierpinski4.png)
+ 
  
  - callout(n = 5): ![](sierpinski5.png)
  
+ 
  - callout(n = 6): ![](sierpinski6.png)
+ 
  
  - callout(n = 7): ![](sierpinski7.png)
  
@@ -59,7 +65,7 @@ func sierpinski(iterations: Int, base center: (x: Double, y: Double), height: Do
     
 }
 
-sierpinski(3, base: (250, 50), height: 400)
+sierpinski(iterations: 3, base: (250, 50), height: 400)
 
 /*:
  - important: This is a recursive thinking challenge. Each iteration of `sierpinski` should only make one call to `drawTriangle`. You should make three, recursive calls to `sierpinski` if you have not reached the base case.

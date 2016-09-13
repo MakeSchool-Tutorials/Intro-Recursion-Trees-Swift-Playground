@@ -6,9 +6,9 @@ Recursion is an interesting topic in computer science. It's simple to understand
 
 Let's take a look at an example.
 
-func recursionTest() {
-    recursionTest()
-}
+    func recursionTest() {
+        recursionTest()
+    }
 
 This is a recursive function. It's a useless function and will just cause your computer to get angry, but it is still recursive!
 
@@ -30,13 +30,13 @@ Yes! This is a perfect test for recursion! Let's see how it would look if we cou
 func count(from: Int, to: Int) {
      print("recursion iteration: \(from)")
      if from < to {
-         count(from + 1, to: to)
+         count(from: from + 1, to: to)
      }
 }
-count(1, to: 10)
+count(from: 1, to: 10)
 /*:
 
-Read that over a few times. What happens when `count(1, to: 10)` is called? Pretend you are the computer and run through it line by line!
+Read that over a few times. What happens when `count(from: 1, to: 10)` is called? Pretend you are the computer and run through it line by line!
 
 ## I guess... that works?
 
@@ -55,9 +55,13 @@ Recursion is especially useful when dealing with trees. Don't believe me? Let's 
 
   ![](tree1.png)
 
-  2. Okay... That was easy... Now, in a seperate space, draw this without lifting the pen from the paper. Your pen _must_ end in the same place it started. ![](tree2.png)
+  2. Okay... That was easy... Now, in a seperate space, draw this without lifting the pen from the paper. Your pen _must_ end in the same place it started.
+ 
+  ![](tree2.png)
 
-  3. That was a bit harder, but still pretty easy... Bear with me, we'll get to the point soon! Draw this without lifting the pen from the paper. Your pen _must_ end in the same place it started. ![](tree3.png)
+  3. That was a bit harder, but still pretty easy... Bear with me, we'll get to the point soon! Draw this without lifting the pen from the paper. Your pen _must_ end in the same place it started.
+  
+  ![](tree3.png)
 
 ## Okay! Enough trees! Why did you make me do that?
 
@@ -68,6 +72,7 @@ Well, do you think you can write the code to draw trees like that?
 - callout(Try it out!): Fill out the function below and uncomment the line calling it! The function should draw a "one level" tree like in the picture. Make sure the _fox_ ends up back at the same spot it started!
 
   ![](tree1.png)
+ 
 
 - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
@@ -88,6 +93,7 @@ One you have that working, comment out the the call to `drawOneLevelTree()`. Let
 
      ![](tree2.png)
  
+ 
  - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
 */
@@ -106,6 +112,7 @@ One you have that working, comment out the the call to `drawTwoLevelTree()`. Let
 - callout(Try it out!): Fill out the function below and uncomment the line calling it! The function should draw a "three level" tree like in the picture. Make sure the _fox_ ends up back at the same spot it started!
 
   ![](tree3.png)
+ 
  
  - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
