@@ -22,7 +22,7 @@ open class DrawingScene: SKScene {
             pen.newShapeNode()
             let image = NSImage(cgImage: background.texture!.cgImage(), size: self.size)
             image.lockFocus()
-            NSGraphicsContext.current()?.shouldAntialias = true
+            NSGraphicsContext.current?.shouldAntialias = true
             for i in lastShapeNode..<(pen.shapeNodes.count-1) {
                 let data = pen.shapeNodes[i]!
                 if data.numberOfPoints > 0 {

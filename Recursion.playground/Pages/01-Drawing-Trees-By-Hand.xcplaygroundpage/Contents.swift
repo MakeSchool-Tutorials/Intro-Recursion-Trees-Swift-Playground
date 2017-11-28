@@ -72,8 +72,8 @@ Well, do you think you can write the code to draw trees like that?
 - callout(Try it out!): Fill out the function below and uncomment the line calling it! The function should draw a "one level" tree like in the picture. Make sure the _fox_ ends up back at the same spot it started!
 
   ![](tree1.png)
- 
-
+ */
+/*:
 - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
 */
@@ -92,8 +92,8 @@ One you have that working, comment out the the call to `drawOneLevelTree()`. Let
 - callout(Try it out!): Fill out the function below and uncomment the line calling it! The function should draw a "two level" tree like in the picture. Make sure the _fox_ ends up back at the same spot it started!
 
      ![](tree2.png)
- 
- 
+ */
+/*:
  - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
 */
@@ -112,8 +112,8 @@ One you have that working, comment out the the call to `drawTwoLevelTree()`. Let
 - callout(Try it out!): Fill out the function below and uncomment the line calling it! The function should draw a "three level" tree like in the picture. Make sure the _fox_ ends up back at the same spot it started!
 
   ![](tree3.png)
- 
- 
+ */
+/*:
  - callout(Rules): You can only use `move(steps: Int)` and `rotate(degrees: Int)` to complete this! Both functions support negative values.
 
 */
@@ -232,7 +232,7 @@ Don't worry though, if we use recursion, we could draw a tree of _any_ size in j
 
 
 //: This is setup code to make the live visualization work!
-Pen.delay = 0.2
+Pen.delay = 0.1
 import PlaygroundSupport
 import Foundation
 let results = DrawingScene.setup()

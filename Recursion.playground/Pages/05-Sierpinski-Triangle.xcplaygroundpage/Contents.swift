@@ -10,23 +10,23 @@ import Foundation
  The Sierpinski triangle is a recursively, defined fractal made out of equilateral triangles. Each iteration draws 3 more triangles inside of the original. Let's take a look at each case!
  
  - callout(Base case, n = 1): ![](sierpinski1.png)
- 
- 
+ */
+/*:
  - callout(n = 2): ![](sierpinski2.png)
- 
- 
+ */
+/*:
  - callout(n = 3): ![](sierpinski3.png)
- 
- 
+ */
+/*:
  - callout(n = 4): ![](sierpinski4.png)
- 
- 
+ */
+/*:
  - callout(n = 5): ![](sierpinski5.png)
- 
- 
+ */
+/*:
  - callout(n = 6): ![](sierpinski6.png)
- 
- 
+ */
+/*:
  - callout(n = 7): ![](sierpinski7.png)
  
  ## drawTriangle

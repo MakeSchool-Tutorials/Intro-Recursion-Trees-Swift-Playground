@@ -7,14 +7,14 @@
  ## Let's take a look at those trees again...
 
  - callout(One level tree): ![](tree1.png)
-
- 
+ */
+/*:
  - callout(Two level tree): ![](tree2.png)
-
- 
+ */
+/*:
  - callout(Three level tree): ![](tree3.png)
-
- 
+ */
+/*:
  - callout(Four level tree): ![](tree4.png)
 
  ## Thinking recursively
